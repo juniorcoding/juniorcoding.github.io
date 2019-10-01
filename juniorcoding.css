@@ -145,6 +145,7 @@ input[type=text] {
 	margin: 0;
 }
 section{
+	word-wrap: break-word;
 	display: inline-block;
 	width: 100vw;
 	background-color: #51D0DE;
