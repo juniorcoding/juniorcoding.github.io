@@ -63,6 +63,6 @@ window.addEventListener("scroll",
 			else{
 				document.getElementById("menubar").classList.add("firstTransition");
 				document.getElementById("menubar").classList.remove("secondTransition");
-				document.getElementById("menubar").style.backgroundColor= "#51D0DE";
+				document.getElementById("menubar").style.backgroundColor= "#4681d5";
 			}
 		});
