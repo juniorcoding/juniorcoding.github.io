@@ -1,149 +1,269 @@
-html{
-	scroll-behavior: smooth;
-}
-h1{
-	font-size: 5em;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-}
-h2{
-	font-size: 2em;
-	font-family: 'Josefin Sans', sans-serif;
-	color: white;
-}
-h3{
-	font-size: 1.5em;
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-}
-h4{
-	font-size: calc(1em + 1vw);
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-}
-.menu{
-}
-.menu a{
-	display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 2vw;
-  text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-  font-size: 2vh;
-}
-.menu a:hover{
-	color: red;
-}
-.menu2{
-		background-color: blue;
-}
-@-webkit-keyframes browse{
-	from{background-color: orange;}
-	to{background-color: #4681d5;}
-}
-@-webkit-keyframes resting{
-	from{background-color: #4681d5;}
-	to{background-color: orange;}
-}
-.firstTransition{
-	-webkit-animation: browse 2s;
-}
-.secondTransition{
-	-webkit-animation: resting 2s;
-}
-.profile{
-	border-radius: 50%;
-	width: 25vh;
-	height: 25vh;
-}
-.homeImg{
-	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/10/02/06563189be798ab.jpg");
-}
-.button {
-  border: none;
-  padding: 16px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 2vh;
-	font-family: 'Montserrat', sans-serif;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
+<html>
+	<head>
+		<meta name="description" content="Junior Coding League empoweres the next generation of coders by allowing students to innovate. We aid students in the creation of any project they feel will better their communities.">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145161085-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
 
-.button1 {
-  background-color: #4CAF50;
-  color: white;
-  border: 2px solid #4CAF50;
-	border-radius: 15px;
-}
-.button1:hover {
-        background-color: white;
-        color: #4CAF50;
-}
-.joinButton{
-	color: white;
-}
-.joinButton:hover {
-	opacity: 0.7;
-}
-.subsection{
-	background-color: #0071dc;
-	width: 100vw;
-}
-input[type=text] {
-	width: 15vw;
-	height: 3vh;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: none;
-	background-color: #3CBC8D;
-	color: white;
-}
-@keyframes fadein{
-	from{opacity: 0}
-	to{opacity: 1}
-}
-@-webkit-keyframes fadein{
-	from{opacity: 0}
-	to{opacity: 1}
-}
-@keyframes fadeout{
-	from{opacity: 1}
-	to{opacity: 0}
-}
-@-webkit-keyframes fadein{
-	from{opacity: 1}
-	to{opacity: 0}
-}
-.appear{
-	-webkit-animation: fadein 6s;
-	animation: fadein 1s;
-}
-.disappear{
-	-webkit-animation: fadeout 6s;
-	animation: fadeout 6s;
-}
-.hidden{
-	opacity: 0;
-}
-.sticky{
-	position: fixed;
-	top: 0;
-	width: 100vw;
-}
-.appearInf{
-	-webkit-animation: fadeout 6s infinite;
-	animation: fadeout 6s infinite;
-}
-*{
-	margin: 0;
-}
-section{
-	word-wrap: break-word;
-	display: inline-block;
-	width: 100vw;
-	background-color: #4681d5;
-}
+  		gtag('config', 'UA-145161085-1');
+		</script>
+
+
+		<title>Junior Coding League</title>
+		<link rel = "shortcut icon" type = "image/png" href = "icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+		<link rel = "stylesheet" href = "juniorcoding.css"></link>
+		<script src = "juniorcoding.js"></script>
+	</head>
+	<body>
+		<section class = "menu sticky" id = "menubar">
+			<div style = "float: left;">
+			<subsection style = "color: white;width: 15vw;">
+			</subsection>
+			<img src = "logo.png" style = "width: 15em; height:5em;" alt = "Logo of Junior Coding League">
+			</div>
+			<div style = "float: right;">
+				<a href = "#home">Home</a>
+				<a href = "#diagram">About</a>
+				<a href = "#founders">Team</a>
+				<a href = "#contact">Contact Us</a>
+			</div>
+		</section>
+		<section style = "height: 15vh;">
+		</section>
+		<section id = "home" style = "height: 100vh;">
+			<center>
+				<h1>Junior Coding League</h1>
+				<section style = "height: 5vh;width:100vw;">
+				</section>
+				<h3>The Programmers of Today Build the World of Tomorrow</h3>
+				<section style = "height: 5vh;width:100vw;">
+				</section>
+				<a href = "#slideshow"><button class = "button button1">Our Locations</button></a>
+				<a href = "#founders"><button class = "button button1">Who we are</button></a>
+				<a href = "#tutor"><button class = "button button1">Register With Us</button></a>
+
+				<section style = "height: 5vh; width: 100vw;">
+				</section>
+				<img id = "slides" src = "https://www.techwillsaveus.com/wp-content/uploads/2017/11/STEM-blog-image.jpg" alt  = "pictures displaying how Junior Coding League Operates" style = "max-width: 50vw; max-height: 50vh;">
+				<section style = "height: 5%; width: 100vw;">
+				</section>
+			</center>
+		</section>
+
+		<section style = "height: 5vh;" class = "subsection">
+		</section>
+
+		<section id="slideshow" class = "subsection">
+   			<center>
+				<h2>
+					Come meet with us at any of our locations!
+				</h2>
+				<section style = "height: 5%;width:100vw;" class = "subsection">
+				</section>
+				<a href = "https://www.plainsborolibrary.org/"><button class = "button button1">Plainsboro Public Library</button></a>
+				<a href = "https://www.mcl.org/westwindsor"><button class = "button button1">West Windsor Library</button></a>
+				<a href = "https://princetonlibrary.org/"><button class = "button button1">Princeton Library</button></a>
+				<section style = "height: 5%;" class = "subsection"></section>
+				<h4>
+					We will have group lessons launching in each of these libraries, where we will teach students how to practically apply their programming knowledge in a way that helps the community! Students will build anything,
+					from simple programming projects like reminders to take out the trash, to more complex ideas, such as matching medicine with patients
+				</h4>
+				<section style = "height: 5vh;" class = "subsection">
+				</section>
+			</center>
+		</section>
+
+		<section id = "diagram">
+			<center>
+				<section style = "height: 5vh;">
+				</section>
+
+				<h2 class = "underline">How Does it Work?</h2>
+
+				<section style = "height: 5%;width:100vw;">
+				</section>
+
+				<table style = "width: 60vw;">
+				<tr>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/find-user-male.png">
+					</th>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/create-new.png">
+					</th>
+					<th>
+						<img src="https://img.icons8.com/ultraviolet/100/000000/robot.png">
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<h4>
+							Junior Coding League finds able volunteers through our screening process.
+						</h4>
+					</th>
+					<th>
+						<h4>
+							Our dedicated volunteers come up with a lesson plan that allows for creative exploration.
+						</h4>
+					</th>
+					<th>
+						<h4>
+							Students create applications and machines to solve problems in their communities.
+						</h4>
+					</th>
+				</tr>
+				</table>
+				<section style = "height:10%">
+				</section>
+				<h4>Through these methods, Junior Coding League ensures that all students explore their interests as thoroughly as possilbe, and that they are able to help their communities in the process. Students develop keen interests in coding, as they can practially apply knowledge, and, in the process, fall in love with the process of coding. Furthermore, students are able to give back to their communities through the unique projects they develop.</h4>
+			</center>
+		</section>
+
+		<section style = "height: 5vh">
+		</section>
+
+		<section id = "founders" style = "background: -webkit-linear-gradient(#4681d5, #0071dc)">
+			<center>
+				<h2 class = "underline">
+					Meet the team!
+				</h2>
+				<table cellpadding = "15">
+					<tr>
+						<td>
+							<center><img alt = "Archit Mehta, junior coding league founder" class = "profile" src = "https://scontent.fewr1-2.fna.fbcdn.net/v/t1.0-9/43328120_326405304783426_6472747243874025472_n.jpg?_nc_cat=105&_nc_oc=AQlG_gXzP-poBSXvBtawoq4YTf1kvyIuFmoTQBHnaYvAk-dcRTtm0zwfYVv2qgj3oo0&_nc_ht=scontent.fewr1-2.fna&oh=af5718bdb6a19f71ed0b8969690fb16b&oe=5DAA5C20"></center>
+						</td>
+						<td>
+							<center><img alt = "Aneesh Durai, junior coding league founder" class = "profile" src = "https://scontent.fewr1-1.fna.fbcdn.net/v/t1.15752-9/67300734_366732130631938_6053039951627419648_n.jpg?_nc_cat=100&_nc_oc=AQkuUP--5hYy6a0yjCpBSYLVqiifhWDc2NhhtKFFx9gGuO59QNAHzUQ7NLN-HvDvx2w&_nc_ht=scontent.fewr1-1.fna&oh=d6bf9ac6dcc59733774d38af067e9c7f&oe=5DEB7E6B"></center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h2>Archit Mehta</h2></center>
+						</td>
+						<td>
+							<center><h2>Aneesh Durai</h2></center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h3>Co-founder, President</h3></center>
+						</td>
+						<td>
+							<center><h3>Co-founder, President</h3></center>
+						</td>
+					</tr>
+				</table>
+				<table cellpadding = "15">
+					<tr>
+						<td>
+							<center><img alt = "Aneesh Durai, junior coding league founder" class = "profile" src = "https://instagram.fewr1-2.fna.fbcdn.net/vp/1a51307a0cacb7295947f43f3f5ddefe/5DE76C24/t51.2885-15/e35/61257792_2392949407431852_6617100771125207764_n.jpg?_nc_ht=instagram.fewr1-2.fna.fbcdn.net"></center>
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h2>Akul Ramayani</h2></center>
+						</td>
+						<td>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center><h3>NY Director of Operations</h3></center>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</section>
+
+
+		<section id = "tutor" class = "subsection">
+			<section style = "height: 5%" class = "subsection"></section>
+			<center>
+				<h2>Join Junior Coding League!</h2>
+				<section style = "height: 5%;width:100vw;" class = "subsection">
+				</section>
+				<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdLlcMT8C9KRXpj54Alkgr8qnMcRAXeVlTSZp1iyXn9K4imhA/viewform"><button class = "button joinButton" style = "background-color: purple;">Join as a Tutor!</button></a>
+				<a href = "https://docs.google.com/forms/d/e/1FAIpQLSdgQRNuvOhKqTZQ7W_wpmNh7Cp6FR4Zg-CbiUbmHheI2KLjbw/viewform?fbclid=IwAR3elAIaXDLHhhB7Bppkva71hrdZfgfUkScSRIG-w7MH60xdqajSm84u1P8"><button class = "button joinButton" style = "background-color: darkgray;">Join as a Student!</button></a>
+				<section style = "height: 5%;" class = "subsection">
+				</section>
+				<h3>Tutors fuel Junior Coding League. Tutors deal with students individually and ensure they learn to the best of their potential.</h3>
+			</center>
+		</section>
+		<section style = "height: 10%;" class = "subsection">
+		</section>
+		<section id = "donations">
+			<center>
+				<section style = "height: 5%;"></section>
+				<h2 class = "underline">Meet our partners!</h2>
+				<section style = "height: 5%;"></section>
+				<img class = "profile" src = "https://static.wixstatic.com/media/544c9d_ba4bfdd9c8e44cdf8c10d669c8ebeeaa~mv2.png/v1/crop/x_70,y_126,w_386,h_194/fill/w_262,h_132,al_c,usm_0.66_1.00_0.01/Humans%20For%20Healing%20(1).png">
+				<section style = "height: 5%;"></section>
+				<h4>
+					Humans for Healing is a nonprofit organization that aims to help educate people throughout the world and increaase literacy rates. We work with them in order to make sure that together we are able to combat illiteracy and create as much education as possible. All money we earn is donated to Humans For Healing, and they use it for projects like creating computer labs, libraries, etc.
+					<section style = "height: 5%;"></section>
+					<a href = "https://www.humansforhealing.org"><button class = "button button1">Check them out!</button></a>
+				</h4>
+			</center>
+		</section>
+
+		<section style = "height: 5vh">
+		</section>
+
+		<section style = "height: 5vh" class = "subsection">
+		</section>
+
+		<section id = "chapters" class = "subsection">
+			<center>
+				<h2 class = "underline">Start a Chapter With Us!</h2>
+				<section class = "subsection" style = "height: 5%;">
+				</section>
+				<h3>Chapters are essentially regions in which Junior Coding League operates. Because we cannot personally set up new regions, we encourage highschoolers to reach out to us and help set up a chapter in their region!</h3>
+				<section class = "subsection" style = "height: 5%;">
+				</section>
+				<a href = "https://docs.google.com/forms/d/e/1FAIpQLSc_rKjeDY8VvNp8NXFWeIxXCyWgnJWuVvl8WV8qmwUeez22gQ/viewform?usp=pp_url"><button class = "button joinButton" style = "background-color: orange;">Start a Chapter!</button></a>
+			</center>
+		</section>
+
+		<section style = "height: 5vh" class = "subsection">
+		</section>
+
+		<section id = "contact" style = "background-color: #c9faff;">
+			<center>
+			<h2 style = "color: #51D0DE">Contact Us!</h3>
+			<section style = "height: 5%; background-color: #c9faff;"></section>
+			<table style = "width: 30vw;">
+			<tr>
+				<th>
+					<a href = "mailto:juniorcodingleague@gmail.com"><img src="https://img.icons8.com/ultraviolet/60/000000/new-message.png"></a>
+				</th>
+				<th>
+					<a href = "https://www.instagram.com/juniorcodingleague/"><img src="https://img.icons8.com/ultraviolet/60/000000/instagram-new.png"></a>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					<h3 style = "color: #51D0DE">Email us!</h3>
+				</th>
+				<th>
+					<h3 style = "color: #51D0DE">Our Instagram!</h3>
+				</th>
+			</tr>
+			</table>
+		</center>
+		</section>
+	</body>
+</html>
