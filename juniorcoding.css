@@ -16,6 +16,12 @@ h2{
   display: inline-block;
   line-height: 0.85;
 }
+.center {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 40%;
+}
 h3{
 	font-size: 1.5em;
 	font-family: 'Montserrat', sans-serif;
@@ -27,6 +33,7 @@ h4{
 	color: white;
 }
 .menu{
+	z-index:999;
 }
 .menu a{
 	display: inline-block;
