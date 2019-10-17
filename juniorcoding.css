@@ -28,7 +28,7 @@ h3{
 	color: white;
 }
 h4{
-	font-size: 1em;
+	font-size: calc(0.5vw + 1em);
 	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
 }
