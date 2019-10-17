@@ -8,7 +8,7 @@ h1{
 }
 h2{
 	font-size: calc(2em + 1vw);
-	font-family: 'EB Garamond', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
 }
 .underline{
@@ -24,12 +24,12 @@ h2{
 }
 h3{
 	font-size: 1.5em;
-	font-family: 'EB Garamond', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
 }
 h4{
-	font-size: calc(1em + 1vw);
-	font-family: 'EB Garamond', serif;
+	font-size: 1em;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: white;
 }
 .menu{
