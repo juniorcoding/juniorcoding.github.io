@@ -5,7 +5,7 @@
 $name = '';
 $email = '';
 $msg = '';
-$subject = "Message from Xlight Site"; 
+$subject = "Message from JCL Site"; 
 
 if($_POST) {
 	// collect all input and trim to remove leading and trailing whitespaces
