@@ -1,557 +1,581 @@
+
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+<html class="no-js" lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+        integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="aos/dist/aos.js"></script>
+    <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <title>Junior Coding League</title>
-    <meta name="description" content="Junior Coding League, a non profit that educates the programmers of the future">
-    <meta name="author" content="Archit Mehta">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/animate.min.css" rel="stylesheet" >
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/prettyPhoto.css" rel="stylesheet">
-
-	<link href="css/theme.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/colors/blue.css" rel="stylesheet" class="colors">
+    <title>CS Remastered</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="google-site-verification" content="zeoLK826In-bM1O5WsfYFHSHOAkOiZqrDSRLo3piN2k" />
 
 
-	<!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" type="image/png" href="images/ico/icon.png"/>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <!-- <script src="js/pace.min.js"></script> -->
+
+    <!-- favicons
+    ================================================== -->
 
 </head>
 
-<body data-spy="scroll" data-target="#mynav" data-offset="85">
+<body id="top">
 
-<!-- Preloader -->
-<div id="preloader">
-	<div id="status">
-		<div class="spinner">
-			  <div class="rect1"></div>
-			  <div class="rect2"></div>
-			  <div class="rect3"></div>
-			  <div class="rect4"></div>
-			  <div class="rect5"></div>
-		</div>
-	</div>
-</div>
-<!-- End Preloader -->
+    <!-- header
+    ================================================== -->
 
-<header>
+    <header class="s-header">
 
-<!-- Bootstrap Menu -->
-<div id="navigation">
-	<div class="navbar-wrapper">
-		<nav class="navbar-inverse navbar-static-top" role="navigation">
-			<div class="container">
-				<div class="row">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						</button>
-						<!--<a class="navbar-brand" href="#"></a>-->
-					</div>
-					<div id="mynav" class="navbar-collapse collapse">
-						<ul class="nav navbar-nav main-nav-list">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#team">Team</a></li>
-							<li><a href="#pricing">Join Us</a></li>
-							<li><a href="#contacts">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- End Bootstrap Menu -->
+        <div class="logo">
+            <a class="smoothscroll" href="#home">
+                <img src="images/logo.svg" alt="Homepage" style="width:100px;position: relative;left: 10px;bottom:10px;"
+                    class="homelogo">
+                <img src="images/logo.svg" alt="Homepage" style="width:100px;position: relative;left: 200px;bottom:10px"
+                    class="homelogo2">
+            </a>
+        </div>
+        <nav class="navbar navbar-toggleable-md navbar-light">
+            <ul class="nav navbar-nav">
+                <a class="navbar-brand smoothscroll" href="#home" style="color:white">CS REMASTERED</a>
+                <li class="nav-item nav-item-1">
+                    <a class="nav-link smoothscroll" href="#home" style="color:white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#about" style="color:white">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#why" style="color:white">Our Model</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#mission" style="color:white">Our Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#leadership" style="color:white">Our Leadership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#signup" style="color:white">Get Involved</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smoothscroll" href="#contact" style="color:white">Contact</a>
+                </li>
 
-<!-- Slider -->
-<section id="home">
-    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-			<div class="item active" style="background-image: linear-gradient(to bottom right, #87ceeb, blue)"> <!-- Change Image -->
-				<div class="caption">
-					<h1 class="animated fadeInLeftBig">Junior <strong>Coding</strong> League</h1>
-					<p class="animated fadeInRightBig">The Programmers of Today Build the World of Tomorrow</p>
-					<a data-scroll class="learn-more animated fadeInUpBig" href="#about">Learn More</a>
-				</div>
-			</div>
+            </ul>
+        </nav>
+
+
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content">
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About Us</a></li>
+                    <li><a class="smoothscroll" href="#why" title="about">Our Model</a></li>
+                    <li><a class="smoothscroll" href="#mission" title="mission">Our Mission</a></li>
+                    <li><a class="smoothscroll" href="#leadership" title="leadership">Our Leadership</a></li>
+                    <li><a class="smoothscroll" href="#signup" title="signup">Get Involved</a></li>
+                    <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+                </ul>
+
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/csremastered"><i class="fa fa-facebook"
+                                style="color:black"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/CsRemastered"><i class="fa fa-twitter" style="color:black"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/csremastered/"><i class="fa fa-instagram"
+                                style="color:black"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home">
+        <div id="particles-js">
+            <div class="home-text" data-aos="fade-up">
+                <h1 class="home-title">CS Remastered</h1>
+                <h3 class="home-subhead">Inspiring Innovation</h3>
+            </div>
+        </div>
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+
+        <div class="col-md-6 section-header top" data-aos="fade-up">
+            <h1 class="display-1">Who We Are</h1>
+            <p class="about-desc" align=left>
+                CS Remastered is a nonprofit organization
+                that aims to bring completely free one-on-one
+                computer science mentoring to the next
+                generation of innovators.
+            </p>
+            <a class="smoothscroll" href="#signup">
+                <button type="button" class="btn btn-primary btn-circle btn-xl button" style="border:none"><i
+                        class="glyphicon glyphicon-list">GET INVOLVED ></button>
+            </a>
+        </div>
+
+        <div class="col-md-6" data-aos="fade-up">
+            <img class="image" src="images/computer1.png">
+        </div>
+
+     
+
+    </section>
+
+    <!--
+    ================================================== -->
+
+    <section id="why" class="s-why">
+        <div class="col-md-6 image-slider" data-aos="fade-up">
+            <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active">
+                        <img src="./images/Class Photos/IMG_2757.JPG">
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item">
+                        <img src="./images/Class Photos/IMG_2764.JPG">
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item">
+                        <img src="./images/Class Photos/IMG_2760.JPG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Class Photos/IMG_2763.JPG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Class Photos/IMG_2765.JPG">
+                    </div>
+                </div>
+                <a href="#carouselExampleIndicators" class="left carousel-control" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a href="#carouselExampleIndicators" class="right carousel-control" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-6 text-slider" data-aos="fade-up">
+            <h1 class="display-4 top2" align="left">Our Unique Model</h1>
+            <p class="mission-text2" align="left">
+                CS Remastered was designed with one thing in mind: the student.
+                Our classes are designed to provide students with a comprehensive
+                immersion in computer science, while adapting to their own style and pace.
+            </p>
+
+            <div class="row rowmain whyrow" data-aos="fade-up">
+                <div class="col-md-6">
+                    <div class="age">
+                        <i class="material-icons repos2"
+                            style="position:relative; bottom:4rem;color:#0f80f2;font-size:50px">school</i>
+                        <i class="material-icons repos"
+                            style="float:left;position:relative;bottom:11rem;right:2rem;color:#0f80f2;font-size:50px">school</i>
+                        <h4 class="card-title2" style="margin-bottom: 5px;">Recommended Age</h4>
+                        <p class="mission-text3">Our classes are primarily designed for students between 10 and 16 years
+                            old.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="schedule">
+                        <i class="material-icons repos2"
+                            style="position:relative; bottom:4rem;color:#0f80f2;font-size:50px">schedule</i>
+                        <i class="material-icons repos"
+                            style="float:left;position:relative;bottom:11rem;right:2rem;color:#0f80f2;font-size:50px">schedule</i>
+                        <h4 class="card-title2" style="margin-bottom: 5px;">Schedule</h4>
+                        <p class="mission-text3">Our classes are generally held once a week throughout the year.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row rowmain" data-aos="fade-up">
+                <div class="col-md-6 move-up">
+                    <div class="age">
+                        <i class="material-icons repos2"
+                            style="position:relative; bottom:4rem;color:#0f80f2;font-size:50px">assignment</i>
+                        <i class="material-icons repos"
+                            style="float:left;position:relative;bottom:11rem;right:2rem;color:#0f80f2;font-size:50px">assignment</i>
+                        <h4 class="card-title2" style="margin-bottom: 5px;">Curriculum</h4>
+                        <p class="mission-text3">Our curriculums are fully adaptable to every student and include everything from the fundamentals
+                            of computer science to real world development.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 move-up">
+                    <div class="schedule">
+                        <i class="material-icons repos2"
+                            style="position:relative; bottom:4rem;color:#0f80f2;font-size:50px">location_on</i>
+                        <i class="material-icons repos"
+                            style="float:left;position:relative;bottom:11rem;right:2rem;color:#0f80f2;font-size:50px">location_on</i>
+                        <h4 class="card-title2" style="margin-bottom: 5px;">Our Locations</h4>
+                        <p class="mission-text3">Our classes are currently held at the Mercer County Library in Ewing, NJ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- how it works
+    ================================================== -->
+    <!-- <section id='works' class="s-works">
+            <div class="row rowmain" data-aos="fade-up">
+                    <div class="col-sm-3 register">
+                    <div class="register">
+                      <img class="card-img-top registeri" src="images/signup.png" alt="Card image cap">
+                      <div class="card-body register">
+                        <h5 class="card-title su">Sign Up</h5>
+                        <p class="card-text">Start by signing up for free as a student or volunteer</p>
+                      </div>
+                    </div>
+                  </div>      
+                  
+                  <div class="col-sm-3 register">
+                        <div class="register">
+                          <img class="card-img-top registeri" src="images/clock.png" alt="Card image cap">
+                          <div class="card-body register">
+                            <h5 class="card-title">Wait For Our Response</h5>
+                            <p class="card-text">We will get back to you ASAP with the details</p>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div class="col-sm-3 register">
+                            <div class="register">
+                              <img class="card-img-top registeri" src="images/start.png" alt="Card image cap">
+                              <div class="card-body register">
+                                <h5 class="card-title">Start</h5>
+                                <p class="card-text">Once we pair you with a mentor, the learning begins!</p>
+                              </div>
+                            </div>
+                          </div>     
+                          
+                          <div class="col-sm-3 register">
+                                <div class="register">
+                                  <img class="card-img-top registeri" src="images/repeat.png" alt="Card image cap">
+                                  <div class="card-body register">
+                                    <h5 class="card-title">Repeat</h5>
+                                    <p class="card-text">We hold sessions year round, so come back for more</p>
+                                  </div>
+                                </div>
+                              </div>     
+                </div> -->
+
+
+    </section>
+    <!----end how it works-->
+
+
+    <!--
+    ================================================== -->
+    <section id='mission' class="s-mission">
+
+        <div class="intro-wrap">
+            <div class="section-header top" data-aos="fade-up">
+                <div class="col-md-8">
+                    <h3 class="subhead2" align="left">Our Mission Statement.</h3>
+                    <h1 class="display-2 display-2--dark" align="left">To change the way students think about computer
+                        science</h1>
+                </div>
+                <div class="col-md-8">
+                    <p class="mission-text" align=left>
+                        Each year more than 500,000 jobs in computer
+                        science go unfilled. Yet only about 35% of all
+                        high schools in the US even teach the subject.
+                        The ones that do often teach it in a rigid or
+                        one-directional approach, prioritizing
+                        memorization over understanding.
+                        When a subject as complex as computer
+                        science is taught in such an inflexible way,
+                        students are bound to run into obstacles
+                        understanding the material.
+                    </p>
+
+                    <p class="mission-text" align=left data-aos="fade-up">
+                        CS Remastered was founded with the goal
+                        of adopting a different approach to teaching computer
+                        science, one that emphasizes understanding the fundamentals
+                        along with the algorithmic side of CS, rather than
+                        simply memorizing syntax.
+                    </p>
+
+                    <p class="mission-text" align=left data-aos="fade-up">
+                        All of this is done in a one-on-one manner which
+                        ensures a constant student-mentor interaction, and allows
+                        students to ask important questions along the way.
+                    </p>
+                </div>
+
+            </div> <!-- end intro-wrap -->
+        </div>
+
+
+    </section> <!-- end s-works -->
+
+    <!--
+    ================================================== -->
+    <section id='leadership' class="s-leadership">
+
+        <!-- <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div class="col-full">
+                  <h1 class="subhead1">Our Leadership</h1>
+                </div>
+            </div> end section-header -->
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="hoverable" src="images/aneesh.JPG" alt="Card image cap" style="width:318;height:318">
+                    <div class="card-body">
+                        <h5 class="card-title">Aneesh Durai</h5>
+                        <p class="card-text">President & Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/archit.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Archit Mehta</h5>
+                        <p class="card-text">President & Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/akash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Akash Srinivasan</h5>
+                        <p class="card-text">Vice President</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="hoverable" src="images/ruthvik.jpg" alt="Card image cap" style="width:318;height:318">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruthvik Mukkamala</h5>
+                        <p class="card-text">Director of Finance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/sahir.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sahir Mir</h5>
+                        <p class="card-text">Director of Public Relations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/akul.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Akul Ramayani</h5>
+                        <p class="card-text">Director of Operations - New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--
+    ================================================== -->
+    <section id="signup" class="s-signup">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-3">Get Involved!</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row signup-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p align="center">
+                    Join CS Remastered as a student to learn, signup as a volunteer to start teaching, or take
+                    initiative and bring CS Remastered to a location near you.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="student-btn" data-aos="fade-up">
+            <a href="https://goo.gl/forms/Z8bvrM5diZBfTiq93">
+                <button class="full-width btn--primary btn-circle">BECOME A STUDENT</button>
+            </a>
+            <a href="https://goo.gl/forms/hzH06mJoa0n2DJcA2">
+                <button class="full-width btn--primary btn-circle">BECOME A VOLUNTEER</button>
+            </a>
+            <a href="https://forms.gle/22Tac2QnN7r53iDc8">
+                <button class="full-width btn--primary btn-circle">START A CHAPTER</button>
+            </a>
+        </div>
+
+
+    </section>
+
+
+    <!-- how it works
+    ================================================== -->
+    <section id='contact' class="s-works">
+        <div class="row row-diff" align="center">
+            <p style="color:#BDC2C6;margin-bottom:0px;font-size:20px;">West Windsor, NJ, 08550</p>
+            <p style="color:#BDC2C6;margin-bottom:0px;font-size:20px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a3935372a2f2e3f282939333f34393f283f373b292e3f283f3e1a3d373b333674393537">[email&#160;protected]</a>
+                | (+1)732-823-8456</p>
+            <p style="color:#BDC2C6;font-size:20px;margin-bottom:0px">© CS Remastered 2019</p>
+        </div>
+    </section>
+    <!----end how it works-->
+
+
+    <!-- footer
+    ================================================== -->
+
+    <!-- <section id="footer" class="s-last">
+
+    <div class="row">
+
+            <div class="col-twelve last">
+                <div class="copyright last">
+                    <span>© CS Remastered 2019</span> 
+                </div>
+
+            </div>
+
+        </div> 
+        </section>
+         -->
+
+
+
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
-</section>
-<!-- End Slider -->
-
-</header>
-
-<!-- About -->
-<section class="section-wrapper" id="about">
-	<div class="about-us">
-		<div class="why-us">
-			<div class="container">
-				<div class="row">
-					<!-- Block Title -->
-					<div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">
-						<h1><span>ABOUT US</span></h1>
-					</div>
-					<div class="element-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-						<h1>What is Junior Coding League?</h1>
-						<h3>We Are An Organization <span style = "color: #fcdc79;">Changing the Way</span> Students Learn <span style = "color: #fcdc79;">Programming</span></h3>
-					</div>
-					<!-- End Block Title -->
-					<!-- About Us Icons -->
-					<div class="wrapper-why-us">
-						<div class="col-lg-4 col-sm-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-							<i class="hovicon effect-1 sub-a"><b class="fa fa-cogs"></b></i>
-							<h2>Teaching</h2>
-							<p>Our tutors teach students basic syntax and application of major programming languages.</p>
-						</div>
-						<div class="col-lg-4 col-sm-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="450ms">
-							<i class="hovicon effect-1 sub-a"><b class="fa fa-code"></b></i>
-							<h2>Student Coding</h2>
-							<p>Students design their own projects, aiming to solve problems in their communities.</p>
-						</div>
-						<div class="col-lg-4 col-sm-4 wow fadeInDown" data-wow-duration="1s" data-wow-delay="600ms">
-							<i class="hovicon effect-1 sub-a"><b class="fa fa-cloud-upload"></b></i>
-							<h2>Uploading</h2>
-							<p>Students release their projects for the community, learning how to apply their skills in an entrepreneurial context.</p>
-						</div>
-					</div>
-					<!-- End About Us Icons -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End About-->
 
 
-	<!-- Facts -->
-	<div class="facts parallax">
-		<div class="overlay">
-			<div class="wrapper-block-facts">
-				<div class="container">
-					<div class="row">
-						<div class="element-title">
-							<h1 class="main-color wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Our Progess</h1>
-							<h3 class="white-color wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">See How We're Helping!</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="wrapper-number">
-							<div class="col-lg-4 col-md-4">
-								<div class="number wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">
-									<p class="timer main-color" data-from="0" data-to="100" data-speed="2000">100</p>
-								</div>
-								<div class="number-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-									Students Tutored
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4">
-								<div class="number wow fadeInRight" data-wow-duration="1s" data-wow-delay="450ms">
-									<p class="timer main-color" data-from="0" data-to="10" data-speed="2000">10</p>
-								</div>
-								<div class="number-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="450ms">
-									Established Chapters
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4">
-								<div class="number wow fadeInRight" data-wow-duration="1s" data-wow-delay="600ms">
-									<p class="timer main-color" data-from="0" data-to="10000" data-speed="2000">10000</p>
-								</div>
-								<div class="number-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="600ms">
-									Lines of Code
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Facts -->
-
-</section>
-<!-- End About Section -->
-
-<!-- Team Section -->
-<section class="section-wrapper" id="team">
-	<div class="team">
-		<!-- Block Title -->
-		<div class="meet-the-team">
-			<div class="element-title">
-				<div class="row">
-					<div class="container">
-					<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-						<h1><span>MEET THE TEAM</span></h1>
-					</div>
-						<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Our Leadership</h1>
-					</div>
-				</div>
-			</div>
-			<!-- End Block Title -->
-			<div class="row">
-				<div class="container">
-					<div class="wrapper-team">
-						<div class="col-lg-3 col-md-3">
-							<div class="team-member">
-								<div class="team-member-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">
-									<div class="team-member-image">
-										<img src="images/team/archit.jpg" alt="Archit Mehta, the Founder and Chief Executive Officer of Junior Coding League" />
-										<div class="team-overlay">
-											<div class="img-overlay"></div>
-										</div>
-										<div class="overlay-content">
-											<div class="team-member-social-list">
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-facebook"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-twitter"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-									<div class="team-member-meta">
-										<h4 class="team-member-name"><b><span style = "color: #ffa500;">Archit</span> Mehta</b></h4>
-										<div class="team-member-role">CEO</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3">
-							<div class="team-member">
-								<div class="team-member-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="500ms">
-									<div class="team-member-image">
-										<img src="images/team/aneesh.jpg" alt="Aneesh Durai, Co-Founder and President of juniorcodingleague" />
-										<div class="team-overlay">
-											<div class="img-overlay"></div>
-										</div>
-										<div class="overlay-content">
-											<div class="team-member-social-list">
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-facebook"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-twitter"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-									<div class="team-member-meta">
-										<h4 class="team-member-name"><b><span style = "color: #ffa500;">Aneesh</span> Durai</b></h4>
-										<div class="team-member-role">President</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3">
-							<div class="team-member">
-								<div class="team-member-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="800ms">
-									<div class="team-member-image">
-										<img src="images/team/akul.jpg" alt="" /> <!-- Change Image -->
-										<div class="team-overlay">
-											<div class="img-overlay"></div>
-										</div>
-										<div class="overlay-content">
-											<div class="team-member-social-list">
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-facebook"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-twitter"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-									<div class="team-member-meta">
-										<h4 class="team-member-name"><b><span style = "color: #ffa500;">Akul</span> Ramayani</b></h4>
-										<div class="team-member-role">New York Director</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-3">
-							<div class="team-member">
-								<div class="team-member-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="1100ms">
-									<div class="team-member-image">
-										<img src="images/team/member-4.jpg" alt="" /> <!-- Change Image -->
-										<div class="team-overlay">
-											<div class="img-overlay"></div>
-										</div>
-										<div class="overlay-content">
-											<div class="team-member-social-list">
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-facebook"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-twitter"></i></a>
-												<a class="team-member-social-list-item" href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-									<div class="team-member-meta">
-										<h4 class="team-member-name"><b><span style = "color: #ffa500;">Akash</span> Srinivasan</b></h4>
-										<div class="team-member-role">Vice President</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Profile Team -->
-		<div id="team-single-wrap">
-			<div id="team-single">
-			</div>
-		</div>
-		<!-- End Profile Team -->
-	</div>
-</section>
-<!-- End Team Section -->
-
-
-<!-- Works Section -->
-<section class="section-wrapper" id="works">
-	<!-- Partners -->
-	<div class="partners parallax">
-		<div class="overlay">
-			<div class="wrapper-block-partners">
-				<!-- Block Title -->
-				<div class="element-title">
-					<div class="row">
-						<div class="container">
-							<h1 class="main-color wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">OUR PARTNERS</h1>
-							<h3 class="white-color wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">The People Helping Us Change the World</h3>
-						</div>
-					</div>
-				</div>
-				<!-- End Block Title -->
-				<div class="row">
-					<div class="container">
-						<div class="wrapper-partners">
-							<div class="col-lg-6 col-md-6 partners-img wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">
-								<a href="humansforhealing.org"><img src="images/partners/h4h.png" alt=""></a>
-							</div>
-							<div class="col-lg-6 col-md-6 partners-img wow fadeInRight" data-wow-duration="1s" data-wow-delay="500ms">
-								<a href="wwpnextgen.github.io"><img src="images/partners/nextgen.png" alt=""></a>
-							</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Partners -->
-
-</section>
-<!-- End Works Section -->
-
-<!-- Price Section -->
-<section class="section-wrapper" id="pricing">
-	<div class="pricing">
-		<!-- Block Title -->
-		<div class="element-title">
-			<div class="row">
-				<div class="container">
-					<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-						<h1><span>Join Our Team</span></h1>
-					</div>
-					<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Help Us Accomplish Our Goals!</h3>
-				</div>
-			</div>
-		</div>
-		<!-- End Block Title -->
-		<div class="row top-buffer">
-			<div class="container">
-				<div class = "text-center">
-					<h3 class = "col-sm-3 col-lg-3"></h3>
-					<a href = "https://forms.gle/4LcjWSWutMJnPSPZA"><button type="button" class="btn btn-primary col-sm-6 col-lg-6">Join as a Student</button></a>
-				</div>
-			</div>
-		</div>
-		<div class="row top-buffer">
-			<div class="container">
-				<div class = "text-center">
-					<h3 class = "col-sm-3 col-lg-3"></h3>
-					<a href = "https://forms.gle/xgyPf3xWbb3uPToT9"><button type="button" class="btn btn-primary col-sm-6 col-lg-6">Join as a Tutor</button></a>
-				</div>
-			</div>
-		</div>
-		<div class="row top-buffer">
-			<div class="container">
-				<div class = "text-center">
-					<h3 class = "col-sm-3 col-lg-3"></h3>
-					<a href = "https://forms.gle/wu7xQAusqYcmJU418"><button type="button" class="btn btn-primary col-sm-6 col-lg-6">Start a Chapter</button></a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="clients parallax">
-		<!-- Block Title -->
-		<div class="overlay">
-			<div class="wrapper-block-clients">
-				<div class="element-title">
-					<div class="row">
-						<div class="container">
-							<h1 class="main-color wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">OUR PICTURES</h1>
-							<h3 class="white-color wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">See us in action!</h3>
-						</div>
-					</div>
-				</div>
-				<!-- End Block Title -->
-				<div class="row">
-					<div class="container">
-						<div class="wrapper-clients wow fadeInDown" data-wow-duration="1s" data-wow-delay="500ms">
-							<!-- Start Testimonial Slider -->
-							<div class="carousel slide carousel-mod" data-ride="carousel" id="testimonial">
-								<div class="carousel-inner">
-									<!-- Testimonial #1  -->
-									<div class="item active">
-										<div class="row">
-											<div class="col-lg-12 col-sm-12">
-												<div class="testimonial-inner">
-													<img src="images/architteach.jpg" alt="Archit Mehta, our founder, teaching programming at the West Windsor Library" title="" /><!-- Testimonial Image  -->
-												</div>
-												<h5>-- West Windsor Branch --</h5>
-											</div>
-										</div>
-									</div>
-									<!-- End Testimonial #1  -->
-									<!-- Testimonial #2  -->
-									<div class="item">
-										<div class="row">
-											<div class="col-lg-12 col-sm-12">
-												<div class="testimonial-inner">
-													<img src="images/akashteach.jpg" alt="" title="" />
-												</div>
-												<h5>-- West Windsor Branch --</h5>
-											</div>
-										</div>
-									</div>
-									<!-- End Testimonial #2  -->
-									<!-- Testimonial #3  -->
-									<div class="item">
-										<div class="row">
-											<div class="col-lg-12 col-sm-12">
-												<div class="testimonial-inner">
-													<img src="images/architquestion.jpg" alt="Archit Mehta asks future programmers a question" title="" />
-												</div>
-												<h5>-- West Windsor Branch --</h5>
-											</div>
-										</div>
-									</div>
-									<!-- End Testimonial #3  -->
-								</div>
-								<ol class="carousel-indicators">
-									<li data-target="#testimonial" data-slide-to="0" class="active"></li>
-									<li data-target="#testimonial" data-slide-to="1"></li>
-									<li data-target="#testimonial" data-slide-to="2"></li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</section>
-<!-- End Price Section -->
-
-
-<!-- Contact Section -->
-<section class="section-wrapper" id="contacts">
-	<!-- Contacts -->
-	<div class="contacts">
-
-		<!-- Block Title -->
-		<div class="element-title">
-			<div class="row">
-				<div class="container">
-					<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-						<h1><span>Contact Us</span></h1>
-					</div>
-					<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Feel Free to Reach Out to Us!</h3>
-				</div>
-			</div>
-		</div>
-		<!-- End Block Title -->
-
-		<div class="container">
-			<div class="row">
-				<div class="wrapper-contacts">
-					<div class="contact_form">
-						<div class="row">
-							<div class="wrapper-contacts-icons">
-								<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="300ms">
-									<i class="fa fa-map-marker"></i>
-									<div class="">Location</div>
-									<div class="">West Windsor Library</div>
-								</div>
-								<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="450ms">
-									<i class="fa fa-mobile-phone"></i>
-									<div class="">Mon - Fri 08:00 21:00</div>
-									<div class="">+1800 920 8845</div>
-								</div>
-								<div class="col-xs-4 wow fadeInRight" data-wow-duration="1s" data-wow-delay="600ms">
-									<i class="fa fa-envelope-o"></i>
-									<div class="">Email</div>
-									<div class="">juniorcodingleague@gmail.com</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Contacts -->
-
-</section>
-<!-- End Contact Section -->
-
-<!-- Footer -->
-<div class="bottom-footer">
-	<div class="container">
-		<div class="bottom-footer-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-			<ul class="bottom-social-icons">
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-			</ul>
-		</div>
-		<div class="bottom-footer-left wow fadeInUp" data-wow-duration="1s" data-wow-delay="450ms">
-			<p><span>&#169; Copyright 2019 onwards Junior Coding League, by</span>  Archit Mehta</p>
-		</div>
-	</div>
-</div>
-<!-- End Footer -->
-
-<!-- Scroll to Top  -->
-<a href="#" class="scroll-up"><i class="fa fa-arrow-up"></i></a>
-<!-- End Scroll To Top  -->
-
-
-    <!-- Bootstrap core JavaScript
+    <!-- Java Script
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/retina.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/jquery.prettyPhoto.js"></script>
-	<script src="js/jquery.knob.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
-	<script src="js/custom.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
 
 
 </body>
+
 </html>
