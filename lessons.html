@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <link type = "text/css" rel = "stylesheet" href = "animate.css">
+    <title>Online Lessons - Junior Coding League</title>
+    <style>
+      h1{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 6vh;
+      }
+      h2{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 3vh;
+      }
+      h3{
+        font-size: 2vh;
+      }
+      .landing{
+        font-size: 10vh;
+      }
+      .outer {
+        height: 100vh;
+        display: flex;
+      }
+      .inner {
+        margin: auto;
+      }
+      .info-section{
+        text-align: left;
+        display: inline-block;
+        background-color: white;
+        color: #666666;
+        border-radius: 5px;
+        transition-duration: .5s;
+      }
+      .info-section:hover{
+        background-color: #3495eb;
+        color: white;
+      }
+      .alternate-info-section{
+        background-color: #3495eb;
+        color: white;
+        display: inline-block;
+        padding: 5%;
+      }
+      .tiny{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        color: #3495eb;
+      }
+      .reading-text{
+        color: #666666;
+        line-height: 2;
+        font-size: 3vh;
+      }
+      .main-navigation {
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
+        position: fixed;
+        background-color: #3495eb;
+        border-radius: 0px;
+        width: 100vw;
+        z-index: 999;
+      }
+      .main-navigation a{
+        color: #c2daff;
+      }
+      .main-navigation a:hover{
+        color: black;
+      }
+      .series-header{
+        font-size: 4vh;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar main-navigation" style = "height: 5vh;">
+      <a style = "color: white;" class="navbar-brand" href="#">Junior Coding League</a>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style = "">Home</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="lessons.html">Online Lessons</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </nav>
+    <div class = "container text-center" style = "display: inline-block; background-color: #fafafa; width: 100vw;">
+      <div class = "row">
+        <div style = "height: 5vh"></div>
+        <h1 class = "animated wow fadeInDown">Online Lessons</h1>
+        <div style = "height: 5vh"></div>
+      </div>
+      <div class = "row" style = "text-align: left;">
+        <div class = "col-md-4 info-section animated wow fadeInUp" data-wow-delay = "200ms">
+          <h2 class = "series-header">Web Development Series</h2>
+          <h3>Hosted by Archit Mehta and Akash Srinivasan</h3>
+          <h3 style = "line-height: 2;">The Web Development Series will cover the essentials of the creation and implementation of Web-based
+          applications. This course will introduce students to programming with HTML, CSS, and JavaScript, all
+          essential languages in today's world of accessibility and internet-connectedness. This series is perfect for beginners and
+          advanced programmers alike, and our tutors hope to inspire every student to use the knowledge they will acquire through these lessons
+          to give back to their own communities by building websites to solve issues they are faced with.</h3>
+          <h3 class = "reading-text">Lesson 1 - Coming Soon!</h3>
+        </div>
+        <div class = "col-md-4 info-section animated wow fadeInUp" data-wow-delay = "400ms">
+          <h2 class = "series-header">Python Series</h2>
+          <h3>Hosted by Vignesh Venkat</h3>
+          <h3 style = "line-height: 2;">The Web Development Series will cover the essentials of the creation and implementation of Web-based
+          applications. This course will introduce students to programming with HTML, CSS, and JavaScript, all
+          essential languages in today's world of accessibility and internet-connectedness. This series is perfect for beginners and
+          advanced programmers alike, and our tutors hope to inspire every student to use the knowledge they will acquire through these lessons
+          to give back to their own communities by building websites to solve issues they are faced with.</h3>
+          <h3 class = "reading-text">Lesson 1 - Coming Soon!</h3>
+        </div>
+        <div class = "col-md-4 info-section animated wow fadeInUp" data-wow-delay = "600ms">
+          <h2 class = "series-header">Java Series</h2>
+          <h3>Hosted by Aneesh Durai</h3>
+          <h3 style = "line-height: 2;">The Web Development Series will cover the essentials of the creation and implementation of Web-based
+          applications. This course will introduce students to programming with HTML, CSS, and JavaScript, all
+          essential languages in today's world of accessibility and internet-connectedness. This series is perfect for beginners and
+          advanced programmers alike, and our tutors hope to inspire every student to use the knowledge they will acquire through these lessons
+          to give back to their own communities by building websites to solve issues they are faced with.</h3>
+          <h3 class = "reading-text">Lesson 1 - Coming Soon!</h3>
+        </div>
+      </div>
+    </div>
+    <div style = "height: 10vh"></div>
+    <div class = "alternate-info-section" style = "width: 100vw;">
+      <h3 class = "animated wow fadeInUp">Copyright 2020 Junior Coding League</h3>
+      <h3 class = "animated wow fadeInUp">Site Built by Archit Mehta</h3>
+    </div>
+  </body>
+</html>
