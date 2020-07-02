@@ -1,0 +1,198 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <link type = "text/css" rel = "stylesheet" href = "animate.css">
+    <title>Junior Coding League</title>
+    <style>
+      h1{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 6vh;
+      }
+      h2{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        font-size: 3vh;
+      }
+      h3{
+        font-size: 2vh;
+      }
+      .landing{
+        font-size: 10vh;
+      }
+      .outer {
+        height: 100vh;
+        display: flex;
+      }
+      .inner {
+        margin: auto;
+      }
+      .info-section{
+        text-align: left;
+        display: inline-block;
+        background-color: white;
+        color: #666666;
+        border-radius: 5px;
+        transition-duration: .5s;
+      }
+      .info-section:hover{
+        background-color: #3495eb;
+        color: white;
+      }
+      .alternate-info-section{
+        background-color: #3495eb;
+        color: white;
+        display: inline-block;
+        padding: 5%;
+      }
+      .tiny{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+        color: #3495eb;
+      }
+      .reading-text{
+        color: #666666;
+        line-height: 2;
+        font-size: 3vh;
+      }
+      .main-navigation {
+        box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
+        position: fixed;
+        background-color: #3495eb;
+        border-radius: 0px;
+        width: 100vw;
+        z-index: 999;
+      }
+      .main-navigation a{
+        color: #c2daff;
+      }
+      .main-navigation a:hover{
+        color: black;
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar main-navigation">
+      <a style = "color: white;" class="navbar-brand" href="#">Junior Coding League</a>
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style = "">Home</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="#statistics">Online Lessons</a></li>
+        <li><a href="#goals">Partners</a></li>
+      </ul>
+    </nav>
+
+    <div id = "home" class = "container h-100 d-flex text-center outer" style = "background-image: linear-gradient(to bottom right, white, #80b0ff); background-size: cover; width: 100vw; height: 100vh;">
+      <div class = "my-auto inner">
+        <h1 class = "landing animated wow fadeInLeft" style = "color:  #3495eb;">Junior Coding League</h1>
+        <h3 class = "animated wow fadeInRight" style = "color: white; font-size: 3vh;">Creating the Next Generation of Programmers</h3>
+      </div>
+    </div>
+    <div id = "pillars" class = "container text-center" style = "display: inline-block; background-color: #fafafa; width: 100vw;">
+      <div class = "row">
+        <div style = "height: 5vh"></div>
+        <h1 class = "animated wow fadeInDown">What is Junior Coding League?</h1>
+        <div style = "height: 5vh"></div>
+        <div class = "col-md-4 animated wow fadeInUp">
+          <h2>Free Lessons</h2>
+          <h3 style = "line-height: 2;">Junior Coding League provides lessons at no cost, meaning that parents
+          don't have to worry about the costs of learning programming, and can instead focus on allowing their children
+          to develop a passion for programming!</h3>
+        </div>
+        <div class = "col-md-4 animated wow fadeInUp" data-wow-delay = "200ms">
+          <h2>Real-Word Implementation</h2>
+          <h3 style = "line-height: 2;">We do something that <span style = "color: #3495eb;"><b>no other programming education group does.</b></span> We give students
+          hands on experience with building applications for their community. Every one of our students identifies
+          a problem in their local community and we help them build an application to solve that problem, allowing them to give back to their community.</h3>
+        </div>
+        <div class = "col-md-4 animated wow fadeInUp" data-wow-delay = "400ms">
+          <h2>Online Tutoring</h2>
+          <h3 style = "line-height: 2;">With the recent coronavirus pandemic, Junior Coding League also works to provide
+          students with lessons online. Currently, we have lessons for Java, Python, and Web Development(HTML/CSS/JS) on our
+          youtube channel, so that students can continue to learn and follow on without in-person lessons</h3>
+        </div>
+      </div>
+      <div style = "height: 5vh;"></div>
+      <div style = "height: 5vh;"></div>
+    </div>
+    <div id = "statistics" class = "containter alternate-info-section text-center" style = "width: 100vw;">
+      <h1 class = "animated wow fadeInUp" style = "font-size: 4vh; color: #c2daff;">Our Achievements</h1>
+      <div class = "row">
+        <div class = "col-md-4 animated wow fadeInUp" data-wow-dely = "200ms">
+          <h1 style = "color: white;">200</h1>
+          <h3 style = "font-size: 3vh; color: #c2daff;">Students Tutored</h3>
+        </div>
+        <div class = "col-md-4 animated wow fadeInUp" data-wow-delay = "400ms">
+          <h1 style = "color: white;">6</h1>
+          <h3 style = "font-size: 3vh; color: #c2daff;">Established Chapters</h3>
+        </div>
+        <div class = "col-md-4 animated wow fadeInUp" data-wow-delay = "600ms">
+          <h1 style = "color: white;">30</h1>
+          <h3 style = "font-size: 3vh; color: #c2daff;">Volunteers Nationwide</h3>
+        </div>
+        <div style = "height: 20vh;"></div>
+        <div class = "col-md-2"></div>
+        <h3 class = "col-md-8 animated wow fadeInUp" data-wow-delay = "1s" style = "font-size: 3vh; color: #c2daff;">Junior Coding League and its volunteers work tirelessly to
+        educate the underpriviledged and awaken a passion for programming in younger students. We implore you to join us and work
+        along-side us!</h3>
+        <div class = "col-md-2"></div>
+      </div>
+    </div>
+    <div style = "height: 4vh"></div>
+    <div id = "goals" class = "container" style = "width: 100vw; display: inline-block; min-height: 100vh">
+      <div class = "row">
+        <div class = "col-md-2"></div>
+        <div class = "col-md-8">
+          <h3 class = "tiny animated wow fadeInDown">Our Goal.</h3>
+          <h1 class = "animated wow fadeInDown" data-wow-delay = "400ms">Our Plan For the Future</h1>
+          <h3 class = "reading-text animated wow fadeInUp" data-wow-delay = "800ms">
+            Junior Coding League has made a profound impact in the lives of our students, which was exactly the goal
+            that we started out with. Not only have we taught hundreds of students how to program, we have taught them
+            how to give back to their own communities by enabling them to identify and solve the problems that they face
+            in their everyday lives.
+          </h3>
+          <h3 class = "reading-text animated wow fadeInUp" data-wow-delay = "1000ms">
+            That being said, though, Junior Coding League will work to bring its program to as many new and underpriviledged
+            students globally as possible. We are currently working to set up chapters in several international countries,
+            namely India, Pakistan, Afghanistan, Saudi Arabia, and Nigeria! We plan to continue our free lessons in these nations
+            and continue to allow students to discover a passion for programming.
+          </h3>
+          <h3 class = "reading-text animated wow fadeInUp" data-wow-delay = "1200ms">
+            Finally, for students that live in developed nations like the United States, we hope to create an early exposure to programming.
+            Our extensive research has shown that parents are often afraid to enroll their children in programming courses because
+            they fear students may not be able to easily grasp concepts or than the classes cost too much. This is why our classes are not
+            only free, but all of our mentors are extensively trained and vetted. In the future we plan to contiue expanding our volunteers as we grow.
+          </h3>
+        </div>
+        <div class = "col-md-2"></div>
+      </div>
+    </div>
+    <div class = "alternate-info-section" style = "width: 100vw;">
+      <h3 class = "animated wow fadeInUp">Copyright 2020 Junior Coding League</h3>
+      <h3 class = "animated wow fadeInUp">Site Built by Archit Mehta</h3>
+    </div>
+  </body>
+</html>
