@@ -6,7 +6,7 @@
 
   /* background image for the website */
   body {
-    background-image: url("https://youthconway.com/ycma_diamond.jpg");
+    background-image: url("https://previews.123rf.com/images/axelbueckert/axelbueckert1609/axelbueckert160900031/65819266-abstract-wallpaper-pattern-background-in-light-blue.jpg");
   }
   .navbar {
     min-height: 80px;
@@ -131,7 +131,7 @@ img {
 }
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #3357FF; /* Blue */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -147,5 +147,5 @@ img {
 }
 
 .nav-wrapper {
-  background-color: #333333
+  background-color: #0087BD
 }
